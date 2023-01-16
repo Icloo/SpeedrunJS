@@ -79,7 +79,7 @@ phrase.addEventListener('keyup', (event) => {
 function verifphrase() {
 
 if(phrase.value == "Je suis un dev web né en 1998") {
-    alert('win2');
+
     epreuve2.style.display = "none";
     epreuve3.style.display = "block";
     let myError = document.getElementById('error');
