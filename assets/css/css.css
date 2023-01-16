@@ -1,0 +1,111 @@
+section {
+    height: 100vh;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+section , p , span , input , .ligne1 , .ligne2 , h2 {
+    background-color: #0A0A0C;
+    color: #C2A657;
+}
+
+input {
+    height: 5vh;
+    width: 50%;
+    font-size: xx-large;
+}
+
+
+.bouton {	
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;	
+    border-radius: 1px;
+    border: 2px solid #C2A657;
+    background: #2A343D;
+   
+	position: relative;	
+	padding: 0.4rem 1.2rem;
+	padding-right: 1.2rem;
+	color: #C2A657;
+
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+}
+
+.bouton:before, .bouton:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.bouton:hover {
+	color: #2A343D;
+	transition-delay: .5s;
+  z-index: 40;
+}
+
+.bouton:hover:before {
+	transition-delay: 0s;
+}
+
+.bouton:hover:after {
+	background: #C2A657;
+
+	transition-delay: .35s;
+}
+
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-right:before {
+	left: 0;
+	border: 2px solid #C2A657;
+	border-left: 0;
+	border-right: 0;	
+  z-index: 1;
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.ligne1 , .ligne2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.rond1 , .rond2 , .rond3 , .rond4 , .rond5 , .rond6 , .rond7 , .rond8{
+    border-radius: 50%;
+    background-color: #9D7F44;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
