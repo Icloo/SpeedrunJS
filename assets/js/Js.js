@@ -68,6 +68,19 @@ let phrase = document.getElementById('phrase');
 
 // Partie phrase
 
+
+let phrasedebut = ['Je suis un dev web'];
+let phrasefin = ['né en 1998','né en 1997','né en 1989'];
+
+let randomNumber = Math.floor(Math.random()*(phrasedebut.length));
+let randomNumber2 = Math.floor(Math.random()*(phrasefin.length));
+
+let afficherphrase = document.getElementById('afficherphrase');
+
+afficherphrase.innerHTML = phrasedebut[randomNumber] + " " + phrasefin[randomNumber2];
+
+
+
 phrase.addEventListener('keyup', (event) => {
     if (event.key === "Enter") {
     verifphrase();
@@ -78,7 +91,8 @@ phrase.addEventListener('keyup', (event) => {
 
 function verifphrase() {
 
-if(phrase.value == "Je suis un dev web né en 1998") {
+
+if(phrase.value == phrasedebut[randomNumber] + " " + phrasefin[randomNumber2]) {
 
     epreuve2.style.display = "none";
     epreuve3.style.display = "block";
