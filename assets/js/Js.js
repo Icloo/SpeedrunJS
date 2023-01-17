@@ -9,6 +9,7 @@ let pret = document.getElementById('pret');
 epreuve1.style.display = "none";
 epreuve2.style.display = "none";
 epreuve3.style.display = "none";
+epreuve4.style.display = "none";
 
 let temps = 0;
 
@@ -222,6 +223,57 @@ d8.addEventListener("click", () => {
     if (compteurrond == 8) {
         alert("Félicitation tu as fini le jeu en " + temps + " secondes !");
       } 
+});
+
+
+// Partie mario
+
+
+let mario = document.getElementById('mario');
+mario.style.position = 'absolute';
+mario.style.left = 0;
+mario.style.top = 0;
+
+compteurdroite = 0;
+compteurbas = 0;
+
+document.addEventListener('keyup', (event) => {
+
+    if (event.key === "z") {
+        console.log('haut');
+        mario.style.top = parseInt(mario.style.top) - 5 + "vh";
+        compteurbas--;
+        console.log(compteurbas);
+        mario.style.transition = " all 0.5s";
+    }
+    if (event.key === "q") {
+        console.log('gauche');
+        mario.style.left = parseInt(mario.style.left) - 5 + "vw";
+        mario.style.transition = " all 0.5s";
+        compteurdroite--;
+        console.log(compteurdroite);
+    }
+    if (event.key === "s") {
+        console.log('bas');
+        mario.style.top = parseInt(mario.style.top) + 5 + "vh";
+        mario.style.transition = " all 0.5s";
+        compteurbas++;
+        console.log(compteurbas);
+    }
+    if (event.key === "d") {
+        console.log('droite');
+        mario.style.left = parseInt(mario.style.left) + 5 + "vw";
+        mario.style.transition = " all 0.5s";
+        compteurdroite++;
+        console.log(compteurdroite);
+    }
+
+   if(compteurdroite == 16 && compteurbas == 16) {
+    alert('GG');
+    epreuve3.style.display = "none";
+    epreuve4.style.display = "block";
+   }
+    
 });
 
 
