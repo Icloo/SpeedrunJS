@@ -125,3 +125,75 @@ h1 {
     top:80vh;
     left: 80vw;
 }
+
+#goomba {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 50vh;
+    left: 55vw;
+}
+
+#goomba2 {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 70vh;
+    left: 40vw;
+}
+
+
+#goomba3 {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 40vh;
+    left: 70vw;
+}
+
+#goomba4 {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+}
+
+#goomba5 {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 45vh;
+    left: 15vw;
+}
+
+#goomba6 {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+}
+#goomba7 {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 80vh;
+    left: 70vw;
+}
+
+#goomba8 {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top: 10vh;
+    left: 80vw;
+}
