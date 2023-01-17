@@ -273,6 +273,54 @@ document.addEventListener('keyup', (event) => {
     epreuve3.style.display = "none";
     epreuve4.style.display = "block";
    }
+
+   if(compteurdroite == 11 && compteurbas == 10) {
+    mario.style.left = 0;
+    mario.style.top = 0;
+    compteurdroite = 0;
+    compteurbas = 0;
+   }
+
+   if(compteurdroite == 14 && compteurbas == 8) {
+    mario.style.left = 0;
+    mario.style.top = 0;
+    compteurdroite = 0;
+    compteurbas = 0;
+   }
+
+   if(compteurdroite == 8 && compteurbas == 14) {
+    mario.style.left = 0;
+    mario.style.top = 0;
+    compteurdroite = 0;
+    compteurbas = 0;
+   }
+    
+   if(compteurdroite == 4 && compteurbas == 4) {
+    mario.style.left = 0;
+    mario.style.top = 0;
+    compteurdroite = 0;
+    compteurbas = 0;
+   }
+
+   if(compteurdroite == 3 && compteurbas == 9) {
+    mario.style.left = 0;
+    mario.style.top = 0;
+    compteurdroite = 0;
+    compteurbas = 0;
+   }
+
+   if(compteurdroite == 8 && compteurbas == 6) {
+    mario.style.left = 0;
+    mario.style.top = 0;
+    compteurdroite = 0;
+    compteurbas = 0;
+   }
+   if(compteurdroite == 16 && compteurbas == 2) {
+    mario.style.left = 0;
+    mario.style.top = 0;
+    compteurdroite = 0;
+    compteurbas = 0;
+   }
     
 });
 
