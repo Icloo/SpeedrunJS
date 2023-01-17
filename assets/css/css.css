@@ -109,3 +109,19 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+
+#mario {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+}
+
+#tuyaux {
+    width: 50px;
+    height: 50px;
+    background-color: #0A0A0C;
+    position: absolute;
+    top:80vh;
+    left: 80vw;
+}
